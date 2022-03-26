@@ -14,16 +14,11 @@ body {
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  padding: 8px;
 }
 
-.headerleft {
-  display: flex;
-  align-items: center;
-}
-
-.headerright {
+.left, .right {
   display: flex;
   align-items: center;
   gap: 16px;
@@ -53,10 +48,10 @@ button {
 }
 
 ul {
-  display: inline-flex;
+  display: flex;
   gap: 16px;
   margin: 0;
-  padding-left: 16px;
+  padding-left: 0px;
 }
 
 a {

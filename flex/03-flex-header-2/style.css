@@ -13,6 +13,9 @@ body {
   padding: 8px;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
 }
 
 .left, .right {
@@ -46,9 +49,9 @@ button {
 
 ul {
   display: flex;
-  gap: 16px;
   margin: 0;
-  padding-left: 0px;
+  padding: 0;
+  gap: 16px;
 }
 
 a {

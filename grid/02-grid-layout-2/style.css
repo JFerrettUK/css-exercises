@@ -31,7 +31,7 @@ body, html {
 }
 
 .header {
-  min-height: 70px;
+  min-height: repeat(auto-fit, minmax(150px, 1fr));
   background-color: #FFDE22;
   grid-area: header;
 }
@@ -39,20 +39,20 @@ body, html {
 .sidebar {
   background-color: #FF7755;
   grid-area: sidebar;
-  min-width: 170px;
+  min-width: repeat(auto-fit, minmax(150px, 1fr));
 }
 
 .nav {
   background-color: #00DDFF;
-  min-height: 70px;
+  min-width: repeat(auto-fit, minmax(150px, 1fr));
   grid-area: nav;
 }
 
 .article {
   background-color: #bccbde;
   grid-area: article;
-  min-width: 300px;
-  overflow: auto;
+  max-width: repeat(auto-fit, minmax(150px, 1fr));
+  overflow: hidden;
 }
 
 .article p {
@@ -64,6 +64,6 @@ body, html {
 
 .footer {
   background-color: #393f4d;
-  min-height: 70px;
+  min-height: repeat(auto-fit, minmax(150px, 1fr));
   grid-area: footer;
 }

@@ -16,4 +16,28 @@ button {
   font-size: 18px;
   padding: 16px 24px;
   text-align: center;
+  animation: 1s get-normal;
+  transition: transform 1s;
+}
+
+button:hover {
+  animation-name: get-big; /* Play the get-big animation on hover */
+}
+
+@keyframes get-big {
+  from {
+    transform: scale(100%);
+  }
+  to {
+    transform: scale(130%);
+  }
+}
+
+@keyframes get-normal {
+  from {
+    transform: scale(130%);
+  }
+  to {
+    transform: scale(100%);
+  }
 }
